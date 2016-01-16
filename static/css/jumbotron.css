@@ -1,0 +1,31 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+.container .body{
+    padding-top: 30px;
+}
+
+.videos {
+    padding-top: 30px;
+}
+
+.videos li {
+    border-bottom: 1px solid #ebebeb;
+    padding: 5px 0;
+}
+
+.videos img, .sources img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.videos div {
+  font-size: 10px;
+}

@@ -1,0 +1,26 @@
+
+
+- Commands options
+    - playlist
+    - list
+    - source (user/channel)
+    - array sources
+    - youtube video
+
+- queue system (Celery RabbitMQ)
+
+- frontend insert url
+
+- elastic search
+
+- react optimization
+
+- video player
+
+- refactor
+
+- tests
+
+- Frontend design
+
+- Polymer
