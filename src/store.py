@@ -1,6 +1,5 @@
 from db import session
 from src import source
-import pprint
 
 
 def save_video(new_video):

@@ -4,7 +4,6 @@ from urllib import parse
 from bs4 import BeautifulSoup
 from src import source
 from src import store
-import sys
 
 LIST_TYPE_PLAIN = 'plain_list'
 LIST_TYPE_PLAY_LIST = 'play_list'
@@ -78,10 +77,10 @@ def get_videos_from_playlists(source):
         res = load_more_content(res['link_more'])
 
 
-def get_videos_from_list(source):
-    for video in scrape_videos_from_list(source.url + '/videos', LIST_TYPE_PLAIN):
+def get_videos_from_list(_source):
+    for video in scrape_videos_from_list(_source.url + '/videos', LIST_TYPE_PLAIN):
         if not video.source:
-            video.source = source.__dict__
+            video.source = _source.__dict__
         yield video
 
 
