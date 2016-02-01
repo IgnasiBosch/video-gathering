@@ -8,7 +8,7 @@ var PlayLists = React.createClass({
     },
 
     componentDidMount: function () {
-        $.get('http://ignatius.linux:5000/get-playlists', function (result) {
+        $.get('/get-playlists', function (result) {
             if (this.isMounted()) {
                 this.setState({
                     playlists: result.data
