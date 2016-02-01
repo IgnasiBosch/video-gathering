@@ -8,7 +8,7 @@ var VideoList = React.createClass({
     },
 
     componentDidMount: function () {
-        $.get('http://ignatius.linux:5000/get-videos', function (result) {
+        $.get('/get-videos', function (result) {
             if (this.isMounted()) {
                 this.setState({
                     videos: result.data
