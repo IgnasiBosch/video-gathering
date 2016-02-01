@@ -8,7 +8,7 @@ var SourcesList = React.createClass({
     },
 
     componentDidMount: function () {
-        $.get('http://ignatius.linux:5000/get-sources', function (result) {
+        $.get('/get-sources', function (result) {
             if (this.isMounted()) {
                 this.setState({
                     sources: result.data
